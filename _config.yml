@@ -1,0 +1,8 @@
+## Header
+menu:
+    Home: /
+    Archives: /archives
+
+## Source
+favicon: img/favicon.ico
+css: css/main.css

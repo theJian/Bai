@@ -1,0 +1,98 @@
+article p, article h1, article h2, article h3, article h4, article h5, article h6, article table, article ol, article ul, article iframe, article dl
+    margin-bottom: block-40
+
+blockquote
+    font-style: italic
+    font-size: 1em
+    font-family: serif
+    line-height: 1.2
+    color: light-black
+    padding-left: 1.5em
+    border-left: border-thin
+
+    footer
+        font-size: 14px
+        font-family: sans-serif
+        margin-bottom: block-20
+        position: relative
+        top: -20px
+
+        cite
+            &:before
+              content: "—"
+              padding: 0 0.5em
+
+article li ol, article li ul
+    margin-bottom: 0
+
+.photos
+    margin-bottom: block-40
+
+.content-meta 
+    margin-bottom: block-60
+    padding-bottom: block-10
+   	font-size: 10px
+   	border-bottom: border-thiner
+   	text-align: right
+   	letter-spacing: 2px
+   	text-transform: uppercase
+
+    .meta-title
+        float: left
+        font-size: 15px
+    .meta-title:before
+        content: "\2308"
+    .meta-title:after
+        content: "\230B"
+    
+    .meta-cat:before
+        content: "\2022"
+
+    a
+        color: basic-black
+
+    a:hover
+        color: light-black
+
+.content-title
+    margin-bottom: block-40
+    font-size: 28px
+    letter-spacing: 1px
+
+.content 
+    overflow: hidden
+    border-bottom: border-default
+    padding-bottom: block-20
+    margin-bottom: block-10
+
+    .pullquote
+        text-align: left
+        width: 45%
+        margin: 0
+
+        &.left
+            margin-left: 0.5em
+            margin-right: 1em
+            float:left
+
+        &.right
+            margin-right: 0.5em
+            margin-left: 1em
+            float:right
+
+.content-nav
+    letter-spacing: 2px
+   	text-transform: uppercase
+    font-size: 10px
+    text-align: right
+    margin-top: block-60
+    
+    a
+        color: basic-black
+        text-align: right
+
+    a:hover
+        color: color-link
+
+    .prev-page
+        float: left

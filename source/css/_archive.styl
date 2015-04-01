@@ -1,0 +1,87 @@
+.archive-title
+    margin-bottom: block-40
+    padding-bottom: block-10
+   	font-size: 10px
+   	text-align: right
+   	letter-spacing: 2px
+   	text-transform: uppercase
+
+.archive-post
+    margin-bottom: block-20
+    list-style: none
+    padding: 0
+
+    li
+        margin-bottom: block-40
+        font-size: font-small
+    
+        .archive-date a, .archive-cat a
+            border-bottom: border-thiner
+            padding-bottom: 5px
+            color: basic-grey
+            display: block
+        .archive-date a:hover, .archive-cat a:hover
+            color: light-black
+
+        .archive-cat a
+            float: right
+
+        h3
+            padding: 5px 0 block-10 0
+            letter-spacing: 1px
+            
+            a
+                color: light-black
+                display: block
+            a:hover
+                color: basic-black
+
+.archive-nav
+    letter-spacing: 2px
+   	text-transform: uppercase
+    font-size: 10px
+    text-align: right
+    
+    a
+        color: basic-black
+        text-align: right
+
+    a:hover
+        color: color-link
+
+[class*='col-']
+    float: left
+    padding: 0 5px
+    
+    +:first-child
+        padding: 0 5px 0 0
+
+    +:last-child
+        padding: 0 0 0 5px
+
+.content-archive .col-1-2
+    width: 33.333%
+    
+    h3 
+        border-bottom: border-default
+        padding-bottom: block-10
+        margin-bottom: block-20
+        text-transform: uppercase
+        font-size: font-small
+        letter-spacing: 2px
+
+    ul
+        padding-left: 15px
+        line-height: 2
+
+    span
+        font-size: font-small
+        position: relative
+        top: -1px
+        color: basic-grey
+    
+    span:before
+        content: " - "
+        
+.title-link a:hover:before
+    content: " → "
