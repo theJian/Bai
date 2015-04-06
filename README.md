@@ -1,2 +1,2 @@
-# cardboard-theme-for-hexo
+Bai
 theme for my blog (under developing)
