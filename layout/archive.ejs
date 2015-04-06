@@ -6,7 +6,7 @@
     
     <div class="col-1-2">
         
-        <h3>Timeline</h3>
+        <h3>Archive</h3>
         
         <%- list_archives() %>
         
@@ -34,21 +34,22 @@
         
             <li>
                 
-                <p class="archive-date">
-                    <a href="<%- url_for(article.path) %>"><%= date(article.date) %></a>
-                </p>
-                <p class="archive-cat">
-                    <% if (article.categories && article.categories.length){ %>
-                      <%
-                      var cats = [];
-                      article.categories.forEach(function(cat){
-                        cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
-                      });
-                      %>
-                      <span class="categories">
-                        <%- cats.join(', ') %>
-                      </span>
-                    <% } %>
+                <p class="archive-info">
+                  <span class="archive-cat">
+                      <% if (article.categories && article.categories.length){ %>
+                        <%
+                        var cats = [];
+                        article.categories.forEach(function(cat){
+                          cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+                        });
+                        %>
+                          <%- cats.join(', ') %>
+                      <% } %>
+                  </span>
+                  <span class="archive-date">
+                      <a href="<%- url_for(article.path) %>"><%= date(article.date) %></a>
+                  </span>
+                  <span class="clear"></span>
                 </p>
                 
                 <% if (article.link) { %>
@@ -59,7 +60,7 @@
         
                 <% } else { %>
                 
-                <h3><a href="<%- url_for(article.path) %>"><%= article.title %></a></h3>
+                <h3 class="title-link"><a href="<%- url_for(article.path) %>"><%= article.title %></a></h3>
                 <% } %>
                 
             </li>

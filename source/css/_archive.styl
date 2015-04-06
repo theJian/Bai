@@ -22,9 +22,15 @@
             display: block
         .archive-date a:hover, .archive-cat a:hover
             color: light-black
+        .archive-date a:before
+            content: " ☀ "
 
         .archive-cat a
             float: right
+        .archive-cat a:after
+            content: " } "
+        .archive-cat a:before
+            content: " { "
 
         h3
             padding: 5px 0 block-10 0
@@ -82,6 +88,11 @@
     
     span:before
         content: " - "
+
+    a
+        color: light-black
+    a:hover
+        color: basic-black
         
-.title-link a:hover:before
-    content: " → "
+.title-link a:hover:after
+    content: " ······ ( •̀ω•́ )σ "
