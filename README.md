@@ -1,2 +1,2 @@
-Bai
-theme for my blog (under developing)
+###Bai
+theme for hexo
